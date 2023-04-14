@@ -1,0 +1,12 @@
+{
+	"title"		:	"mango_trees",
+	"type"		:	"model",
+	"ignore"	:
+	[
+		"*.sh",
+		".git/*",
+		".gitignore",
+		"src/*",
+		"icon.jpg"
+	]
+}

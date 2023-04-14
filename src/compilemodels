@@ -1,0 +1,13 @@
+#!/bin/bash
+WINEPREFIX=~/.wine
+export WINEPREFIX
+WINEDEBUG=-all
+export WINEDEBUG
+WINEARCH=win32
+export WINEARCH
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 tree_mango_01.qc
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 tree_mango_02.qc
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 tree_mango_03.qc
+
+rm -r /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/addons/polyasset3dmango/models
+mv /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/models /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/addons/polyasset3dmango/
